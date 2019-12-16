@@ -1,9 +1,6 @@
 # DFS Traversal.
 
-
-
 from collections import defaultdict
-
 
 
 class Graph:
@@ -29,7 +26,13 @@ class Graph:
 
         visited = [False] * self.n
 
-        self.DFS_Visit(u, visited)
+        # Traverse only reachable vertices.
+        # self.DFS_Visit(u, visited)
+
+        # Traverses reachable and unreachable vertices.
+        for i in range(self.n):
+            if not visited[i]:
+                self.DFS_Visit(i, visited)
 
 
             
