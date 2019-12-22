@@ -1,17 +1,8 @@
 # DFS Traversal.
 
-<<<<<<< HEAD
 from collections import defaultdict
 
 
-=======
-
-
-from collections import defaultdict
-
-
-
->>>>>>> bca4ebc3caeaccd9145c9c8a5f35645e1bcd3b4e
 class Graph:
     def __init__(self, n):
         self.n = n
@@ -34,8 +25,6 @@ class Graph:
     def DFS(self, u):
 
         visited = [False] * self.n
-
-<<<<<<< HEAD
         # Traverse only reachable vertices.
         # self.DFS_Visit(u, visited)
 
@@ -43,10 +32,6 @@ class Graph:
         for i in range(self.n):
             if not visited[i]:
                 self.DFS_Visit(i, visited)
-=======
-        self.DFS_Visit(u, visited)
->>>>>>> bca4ebc3caeaccd9145c9c8a5f35645e1bcd3b4e
-
 
             
 if __name__ == "__main__":
@@ -56,3 +41,4 @@ if __name__ == "__main__":
     g.addEdges(2, 4)
     g.addEdges(5, 4)
     g.DFS(1) 
+
